@@ -6,7 +6,11 @@ int main() {
     int number;
     cout << "Podaj liczbe" << endl;
     cin >> number;
-    cout << "Liczba: " << number <<  endl;
-
+    if(number < 0) {
+        cout << "Nalezy podac nieujemna liczbe" << endl;
+    }
+    else {
+        cout << "Liczba: " << number <<  endl;
+    }
     return 0;
 }
