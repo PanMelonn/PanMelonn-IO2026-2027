@@ -11,7 +11,13 @@ int main() {
     int number;
     cout << "Podaj liczbe" << endl;
     cin >> number;
-    cout << "Silnia liczby: " << factorial(number) <<  endl;
+
+    if(number < 0) {
+        cout << "Nalezy podac nieujemna liczbe" << endl;
+    }
+    else {
+        cout << "Silnia liczby: " << factorial(number) << endl;
+    }
 
     return 0;
 }
